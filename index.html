@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepPath | Placement Preparation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <aside class="sidebar">
+            <h2 class="logo">Prep<span>Path</span></h2>
+            <p class="tagline">Your career starts here.</p>
+
+            <nav>
+                <button class="nav-link active" data-page="Dashboard">🏠 Dashboard</button>
+                <button class="nav-link" data-page="Aptitude">🧠 Aptitude Practice</button>
+                <button class="nav-link" data-page="Coding">💻 Coding Practice</button>
+                <button class="nav-link" data-page="Interviews">🎯 Interview Prep</button>
+                <button class="nav-link" data-page="Placements">💼 Placement Tracker</button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Small steps, big careers.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">PLACEMENT PREPARATION PORTAL</p>
+                    <h1 id="page-title">Dashboard</h1>
+                </div>
+                <div class="profile">
+                    <div class="avatar">S</div>
+                    <span>Student</span>
+                </div>
+            </header>
+
+            <section class="welcome">
+                <div>
+                    <p class="eyebrow light">YOUR JOURNEY STARTS HERE</p>
+                    <h2 id="welcome-title">Hey, future developer! 👋</h2>
+                    <p>Build your skills today. Get ready for your dream job.</p>
+                    <button class="primary-btn" id="start-btn">Start preparing →</button>
+                </div>
+                <div class="welcome-icon">🚀</div>
+            </section>
+
+            <section class="section">
+                <div class="section-heading">
+                    <div>
+                        <h2>Your preparation overview</h2>
+                        <p>Keep track of your progress.</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <div class="stat-icon purple">🧠</div>
+                        <p>Aptitude questions</p>
+                        <h3 id="aptitude-count">0</h3>
+                        <span>Questions attempted</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon blue">💻</div>
+                        <p>Coding problems</p>
+                        <h3 id="coding-count">0</h3>
+                        <span>Problems solved</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon orange">🎯</div>
+                        <p>Interview questions</p>
+                        <h3 id="interview-count">0</h3>
+                        <span>Questions reviewed</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-icon green">💼</div>
+                        <p>Applications</p>
+                        <h3 id="application-count">0</h3>
+                        <span>Companies tracked</span>
+                    </article>
+                </div>
+
+                <!-- Dashboard progress tracker -->
+                <section class="panel dashboard-progress-panel">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Your progress tracker</h2>
+                            <p>See how your placement preparation is going.</p>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-progress-item">
+                        <div class="progress-label-row">
+                            <strong>Aptitude Practice</strong>
+                            <span id="aptitude-score-label">No quiz completed yet</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" id="aptitude-score-progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-progress-item">
+                        <div class="progress-label-row">
+                            <strong>Coding Practice</strong>
+                            <span id="dashboard-coding-progress-label">0 of 6 solved · 0%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" id="dashboard-coding-progress"></div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+<section class="panel dashboard-progress-panel">
+    <div class="section-heading">
+        <div>
+           
+            <section class="content-grid">
+                <article class="panel">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Continue learning</h2>
+                            <p>Choose your next activity.</p>
+                        </div>
+                    </div>
+
+                    <div class="learning-list">
+                        <button class="learning-item" data-page="Aptitude">
+                            <div class="course-icon purple">🧠</div>
+                            <div class="course-info">
+                                <h3>Aptitude Practice</h3>
+                                <p>Numbers, reasoning and verbal ability</p>
+                            </div>
+                            <span class="arrow">→</span>
+                        </button>
+
+                        <button class="learning-item" data-page="Coding">
+                            <div class="course-icon blue">💻</div>
+                            <div class="course-info">
+                                <h3>DSA & Coding</h3>
+                                <p>Arrays, strings and algorithms</p>
+                            </div>
+                            <span class="arrow">→</span>
+                        </button>
+
+                        <button class="learning-item" data-page="Interviews">
+                            <div class="course-icon orange">🎯</div>
+                            <div class="course-info">
+                                <h3>Interview Preparation</h3>
+                                <p>Technical and HR questions</p>
+                            </div>
+                            <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Weekly goal</h2>
+                            <p>Your preparation target.</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-number">
+                        <strong id="goal-count">0</strong>
+                        <span>/ 10 activities</span>
+                    </div>
+
+                    <div class="progress-track">
+                        <div class="progress-fill" id="goal-progress"></div>
+                    </div>
+
+                    <p class="goal-note" id="goal-message">
+                        Complete your first activity to begin!
+                    </p>
+
+                    <div class="tip-box">
+                        <span>💡</span>
+                        <div>
+                            <strong>Prep tip</strong>
+                            <p>Consistency matters more than studying everything in one day.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="panel next-panel">
+                <div>
+                    <h2>Ready for your next step?</h2>
+                    <p id="next-description">Choose a section and start preparing for placements.</p>
+                </div>
+                <button class="primary-btn" id="explore-btn">Explore sections →</button>
+            </section>
+
+<section id="aptitude-page" class="panel aptitude-page" hidden>
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">TEST YOUR SKILLS</p>
+            <h2>Aptitude Practice</h2>
+            <p>Practice questions commonly asked in placement tests.</p>
+        </div>
+    </div>
+
+    <div class="quiz-meta">
+        <span id="question-counter">Question 1 of 5</span>
+        <span id="current-score">Score: 0</span>
+    </div>
+
+    <div class="progress-track quiz-progress-track">
+        <div id="quiz-progress" class="progress-fill"></div>
+    </div>
+
+    <div id="quiz-content">
+        <h3 id="question-text">Loading question...</h3>
+
+        <div id="answer-options" class="answer-options"></div>
+
+        <p id="answer-feedback" class="answer-feedback"
+           aria-live="polite"></p>
+
+        <div class="quiz-actions">
+            <button id="check-answer" class="primary-btn quiz-button">
+                Check Answer
+            </button>
+
+            <button id="next-question" class="primary-btn quiz-button" hidden>
+                Next Question →
+            </button>
+        </div>
+    </div>
+
+    <div id="quiz-result" hidden>
+        <h2>Quiz completed! 🎉</h2>
+        <p id="final-score"></p>
+        <p id="final-message"></p>
+
+        <button id="restart-quiz" class="primary-btn quiz-button">
+            Try Again
+        </button>
+    </div>
+
+    <button id="back-dashboard" class="back-button">
+        ← Back to Dashboard
+    </button>
+</section>
+
+<!-- Coding Practice Module -->
+<section id="coding-page" class="panel coding-page" hidden>
+
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">BUILD YOUR DSA SKILLS</p>
+            <h2>Coding Practice</h2>
+            <p>Practice coding problems for placement interviews.</p>
+        </div>
+    </div>
+
+    <!-- Coding progress -->
+    <div class="coding-stats">
+        <div class="coding-stat">
+            <span class="stat-label">Total Problems</span>
+            <h3 id="total-problems">6</h3>
+        </div>
+
+        <div class="coding-stat">
+            <span class="stat-label">Solved</span>
+            <h3 id="solved-problems">0</h3>
+        </div>
+
+        <div class="coding-stat">
+            <span class="stat-label">Remaining</span>
+            <h3 id="remaining-problems">6</h3>
+        </div>
+    </div>
+
+    <!-- Search and difficulty filter -->
+    <div class="coding-filters">
+        <input
+            type="text"
+            id="coding-search"
+            placeholder="Search problems..."
+            aria-label="Search coding problems"
+        >
+
+        <select id="coding-difficulty" aria-label="Filter by difficulty">
+            <option value="All">All Difficulties</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+    </div>
+
+    <!-- Problem list -->
+    <div id="coding-list" class="coding-list">
+
+        <article class="coding-problem">
+            <div>
+                <h3>Two Sum</h3>
+                <p>Find two numbers that add up to a target.</p>
+                <span class="difficulty easy">Easy</span>
+            </div>
+            <button class="solve-toggle">Mark Solved</button>
+        </article>
+
+        <article class="coding-problem">
+            <div>
+                <h3>Palindrome Number</h3>
+                <p>Check whether an integer reads the same backward.</p>
+                <span class="difficulty easy">Easy</span>
+            </div>
+            <button class="solve-toggle">Mark Solved</button>
+        </article>
+
+        <article class="coding-problem">
+            <div>
+                <h3>Binary Search</h3>
+                <p>Find a target value in a sorted array.</p>
+                <span class="difficulty easy">Easy</span>
+            </div>
+            <button class="solve-toggle">Mark Solved</button>
+        </article>
+
+        <article class="coding-problem">
+            <div>
+                <h3>Best Time to Buy and Sell Stock</h3>
+                <p>Find the maximum profit from stock prices.</p>
+                <span class="difficulty easy">Easy</span>
+            </div>
+            <button class="solve-toggle">Mark Solved</button>
+        </article>
+
+        <article class="coding-problem">
+            <div>
+                <h3>Longest Substring Without Repeating Characters</h3>
+                <p>Find the longest substring with unique characters.</p>
+                <span class="difficulty medium">Medium</span>
+            </div>
+            <button class="solve-toggle">Mark Solved</button>
+        </article>
+
+        <article class="coding-problem">
+            <div>
+                <h3>Container With Most Water</h3>
+                <p>Find two lines that can hold the most water.</p>
+                <span class="difficulty medium">Medium</span>
+            </div>
+            <button class="solve-toggle">Mark Solved</button>
+        </article>
+
+    </div>
+
+    <p id="no-coding-results" hidden>
+        No problems found. Try a different search.
+    </p>
+
+    <button id="coding-back-dashboard" class="back-button">
+        ← Back to Dashboard
+    </button>
+
+</section>
+
+<!-- Interview Preparation Page -->
+<section id="interview-page" class="panel interview-page" hidden>
+
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">GET READY FOR YOUR DREAM JOB</p>
+            <h2>Interview Preparation</h2>
+            <p>Prepare for HR rounds, technical interviews, and company-specific questions.</p>
+        </div>
+    </div>
+
+    <!-- Interview preparation statistics -->
+    <div class="coding-stats">
+        <div class="coding-stat">
+            <span class="stat-label">Total Questions</span>
+            <h3 id="total-interview-questions">12</h3>
+        </div>
+
+        <div class="coding-stat">
+            <span class="stat-label">Practiced</span>
+            <h3 id="practiced-interview-questions">0</h3>
+        </div>
+
+        <div class="coding-stat">
+            <span class="stat-label">Remaining</span>
+            <h3 id="remaining-interview-questions">12</h3>
+        </div>
+    </div>
+
+    <!-- Interview category filter -->
+    <div class="coding-filters">
+        <input
+            type="text"
+            id="interview-search"
+            placeholder="Search interview questions..."
+            aria-label="Search interview questions"
+        >
+
+        <select id="interview-category" aria-label="Filter interview category">
+            <option value="All">All Categories</option>
+            <option value="HR">HR Interview</option>
+            <option value="Technical">Technical Interview</option>
+            <option value="Company">Company Preparation</option>
+        </select>
+    </div>
+
+    <!-- Interview questions -->
+    <div id="interview-list" class="coding-list">
+
+        <article class="coding-problem" data-category="HR">
+            <div>
+                <h3>Tell me about yourself.</h3>
+                <p>A common opening question. Introduce your education, skills, projects, and career goal.</p>
+                <span class="difficulty easy">HR</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Keep your answer around 60–90 seconds. Focus on your current studies, technical skills, projects, and interest in the role.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="HR">
+            <div>
+                <h3>What are your strengths and weaknesses?</h3>
+                <p>Explain what you do well and what you are improving.</p>
+                <span class="difficulty easy">HR</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Choose genuine strengths with examples. For a weakness, mention a real area you are improving and the steps you are taking.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="HR">
+            <div>
+                <h3>Why should we hire you?</h3>
+                <p>Show how your skills and willingness to learn fit the role.</p>
+                <span class="difficulty easy">HR</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Connect your programming fundamentals, problem-solving practice, project experience, and learning attitude to the job requirements.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="HR">
+            <div>
+                <h3>Where do you see yourself in five years?</h3>
+                <p>Describe your realistic professional goals.</p>
+                <span class="difficulty easy">HR</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Talk about becoming a stronger software developer, learning new technologies, and taking on more responsibility.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Technical">
+            <div>
+                <h3>What is Object-Oriented Programming?</h3>
+                <p>Prepare the concepts of classes, objects, inheritance, polymorphism, abstraction, and encapsulation.</p>
+                <span class="difficulty easy">Technical</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Learn each concept with a simple definition and a small C++ or Java example.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Technical">
+            <div>
+                <h3>What is the difference between a stack and a queue?</h3>
+                <p>Understand LIFO and FIFO data structures.</p>
+                <span class="difficulty easy">Technical</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>A stack follows Last In, First Out (LIFO). A queue follows First In, First Out (FIFO). Practice one example of each.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Technical">
+            <div>
+                <h3>What is the difference between SQL and DBMS?</h3>
+                <p>Understand databases, database management systems, and SQL.</p>
+                <span class="difficulty easy">Technical</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>A DBMS is software used to manage databases. SQL is a language used to query and manage data in relational databases.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Technical">
+            <div>
+                <h3>What is the difference between a process and a thread?</h3>
+                <p>Prepare this important Operating Systems topic.</p>
+                <span class="difficulty medium">Technical</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>A process is a running program with its own resources. Threads are execution paths within a process that can share its resources.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Company">
+            <div>
+                <h3>Adobe Preparation</h3>
+                <p>Focus on DSA, problem-solving, core CS subjects, and project discussions.</p>
+                <span class="difficulty medium">Company</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Build strong DSA fundamentals, practice coding problems, revise OOPs, DBMS, OS, and explain your projects clearly. Actual rounds vary by role and hiring process.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Company">
+            <div>
+                <h3>TCS Preparation</h3>
+                <p>Practice aptitude, programming fundamentals, coding, and communication.</p>
+                <span class="difficulty easy">Company</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Revise quantitative aptitude, logical reasoning, basic coding, and interview questions. Check the current recruitment pattern for your role.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Company">
+            <div>
+                <h3>Infosys Preparation</h3>
+                <p>Work on aptitude, logical reasoning, programming, and technical fundamentals.</p>
+                <span class="difficulty easy">Company</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Practice timed aptitude questions, basic programming, DSA, and explaining your projects. Requirements can differ by role.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+        <article class="coding-problem" data-category="Company">
+            <div>
+                <h3>Accenture Preparation</h3>
+                <p>Revise assessment topics, coding basics, communication, and interview fundamentals.</p>
+                <span class="difficulty easy">Company</span>
+                <details>
+                    <summary>View preparation tips</summary>
+                    <p>Practice logical reasoning, verbal ability, programming basics, and common interview questions. Verify the assessment pattern in the current job notice.</p>
+                </details>
+            </div>
+            <button class="interview-toggle">Mark Practiced</button>
+        </article>
+
+    </div>
+
+    <p id="no-interview-results" hidden>
+        No questions found. Try a different search or category.
+    </p>
+
+    <button id="interview-back-dashboard" class="back-button">
+        ← Back to Dashboard
+    </button>
+
+</section>
+
+            <footer>
+                <p>PrepPath © 2026 · Learn. Practice. Get Placed.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

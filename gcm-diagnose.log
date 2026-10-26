@@ -1,0 +1,194 @@
+﻿Diagnose log at 2026-10-25T18:06:42Z
+
+AppPath: C:\Program Files\Git\ucrt64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\ucrt64\bin\
+Version: 2.9.1+6760f0ef069c994aa2bb1d703fb374986ee82a3e
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+SESSIONNAME=Console
+ProgramFiles(x86)=C:\Program Files (x86)
+MSYSTEM=UCRT64
+ProgramW6432=C:\Program Files
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 3, GenuineIntel
+OnlineServices=Online Services
+PROCESSOR_ARCHITECTURE=AMD64
+Path=C:/Program Files/Git/ucrt64/libexec/git-core;C:\Program Files\Git\ucrt64\bin;C:\Program Files\Git\usr\bin;C:\Users\hp\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw-w64\mingw64\bin;;c:\Users\hp\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\hp\.vscode\extensions\vscjava.vscode-java-debug-0.60.0\bundled\scripts\noConfigScripts;c:\Users\hp\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;C:\Program Files\Git\cmd;C:\Program Files\Git\bin
+COMPUTERNAME=SHUBHI
+PROCESSOR_REVISION=ba03
+BRB=C:\Program Files\HP\Sure Click\bin
+USERPROFILE=C:\Users\hp
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+LOGONSERVER=\\SHUBHI
+TEMP=C:\Users\hp\AppData\Local\Temp
+PYDEVD_DISABLE_FILE_VALIDATION=1
+USERNAME=hp
+SystemRoot=C:\windows
+VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\hp\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-fd98fc219097ff0e.txt
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_20424_ODEXWDMUEBXVKZBO
+GIT_EXEC_PATH=C:/Program Files/Git/ucrt64/libexec/git-core
+PLINK_PROTOCOL=ssh
+VSCODE_A11Y_MODE=0
+OneDrive=C:\Users\hp\OneDrive
+USERDOMAIN_ROAMINGPROFILE=SHUBHI
+EFC_11420_344590478=1
+VSCODE_NONCE=4ad815da-c98a-4396-9ed9-697dc45a333a
+CommonProgramFiles=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+VSCODE_JAVA_EXEC=c:\Users\hp\.vscode\extensions\redhat.java-1.58.0-win32-x64\jre\25.0.4.1-win32-x86_64\bin\java
+ProgramData=C:\ProgramData
+platformcode=AN
+HOMEPATH=\Users\hp
+OneDriveConsumer=C:\Users\hp\OneDrive
+BRS=C:\Program Files\HP\Sure Click\servers
+PYTHONSTARTUP=c:\Users\hp\AppData\Roaming\Code\User\workspaceStorage\ee210ea0310960b16f92bcc332c8ef1e\ms-python.python\pythonrc.py
+VSCODE_INJECTION=1
+ALLUSERSPROFILE=C:\ProgramData
+CommonProgramW6432=C:\Program Files\Common Files
+COPILOT_DEBUG_NONCE=6aaf4062b4d2e9fc9a1c08396bba3e4d
+TMP=C:\Users\hp\AppData\Local\Temp
+TERM=xterm-256color
+VSCODE_JDWP_ADAPTER_ENDPOINTS=c:\Users\hp\AppData\Roaming\Code\User\workspaceStorage\ee210ea0310960b16f92bcc332c8ef1e\vscjava.vscode-java-debug\.noConfigDebugAdapterEndpoints\endpoint.txt
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+windir=C:\windows
+GIT_TRACE2_PARENT_SID=24c55072-ca1c-4f1e-8191-ef79a5c2a8fc
+SystemDrive=C:
+NUMBER_OF_PROCESSORS=12
+OS=Windows_NT
+ProgramFiles=C:\Program Files
+ComSpec=C:\windows\system32\cmd.exe
+VSCODE_STABLE=1
+EFC_11420_4126798990=1
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+HOME=C:\Users\hp
+LANG=en_US.UTF-8
+EFC_11420_1592913036=1
+PSModulePath=C:\Users\hp\OneDrive\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+TMPDIR=C:\Users\hp\AppData\Local\Temp
+APPDATA=C:\Users\hp\AppData\Roaming
+USERDOMAIN=SHUBHI
+PROCESSOR_LEVEL=6
+LOCALAPPDATA=C:\Users\hp\AppData\Local
+BUNDLED_DEBUGPY_PATH=c:\Users\hp\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\libs\debugpy
+TERM_PROGRAM_VERSION=1.143.1
+RegionCode=APJ
+COLORTERM=truecolor
+PUBLIC=C:\Users\Public
+TERM_PROGRAM=vscode
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\hp\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\hp\AppData\Local\Temp\d4c14bd388454cff51688790'... OK
+Reading from temporary file 'C:\Users\hp\AppData\Local\Temp\d4c14bd388454cff51688790'... OK
+Deleting temporary file 'C:\Users\hp\AppData\Local\Temp\d4c14bd388454cff51688790'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\hp
+UserDataDirectoryPath: C:\Users\hp\.gcm
+GetCurrentDirectory(): C:\Users\hp\OneDrive\Documents\web dev\prepath
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:60765/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.56.0.windows.3'
+Locating current repository...Git repository at 'C:/Users/hp/OneDrive/Documents/web dev/prepath/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=main
+file:C:/Users/hp/.gitconfig	user.name=Shubhishukla610
+file:C:/Users/hp/.gitconfig	user.email=2k25cse2514128@gmail.com
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/Shubhishukla610/PrepPath.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\hp\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\hp\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
