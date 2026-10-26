@@ -15,6 +15,7 @@ def create_database():
             email TEXT UNIQUE NOT NULL
         )
     """)
+
     conn.execute("""
         CREATE TABLE IF NOT EXISTS quiz_results (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -27,6 +28,7 @@ def create_database():
 
     conn.commit()
     conn.close()
+
 
 @app.route("/")
 def home():
@@ -103,6 +105,35 @@ def save_quiz_score():
         "total": total,
         "percentage": percentage
     })
+
+@app.route("/quiz-history", methods=["GET"])
+def quiz_history():
+    conn = sqlite3.connect("prepath.db")
+
+    conn.row_factory = sqlite3.Row
+
+    rows = conn.execute("""
+        SELECT id, score, total_questions, percentage, created_at
+        FROM quiz_results
+        ORDER BY id DESC
+        LIMIT 10
+    """).fetchall()
+
+    conn.close()
+
+    history = []
+
+    for row in rows:
+        history.append({
+            "id": row["id"],
+            "score": row["score"],
+            "total": row["total_questions"],
+            "percentage": row["percentage"],
+            "date": row["created_at"]
+        })
+
+    return jsonify(history)
+
 
 if __name__ == "__main__":
     create_database()

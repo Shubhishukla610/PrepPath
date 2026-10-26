@@ -948,3 +948,45 @@ footer {
 #interview-list .coding-problem[hidden] {
     display: none !important;
 }
+
+/* Quiz History Section */
+#quiz-history-section {
+    margin-top: 24px;
+}
+
+#quiz-history-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.quiz-history-card {
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.quiz-history-card h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+}
+
+.quiz-history-card p {
+    margin: 7px 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.quiz-history-card .quiz-percentage {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.quiz-history-message {
+    padding: 16px;
+    border-radius: 10px;
+    color: #64748b;
+}

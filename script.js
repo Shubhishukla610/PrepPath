@@ -888,3 +888,67 @@ card.style.display = shouldShow ? (shouldShow ? "flex" : "none") : "none";
     updateInterviewStats();
     filterInterviewQuestions();
 }
+
+/* PrepPath - Quiz History */
+document.addEventListener("DOMContentLoaded", function () {
+    const historyList = document.getElementById("quiz-history-list");
+
+    if (!historyList) return;
+
+    async function loadQuizHistory() {
+        try {
+            const response = await fetch("/quiz-history");
+
+            if (!response.ok) {
+                throw new Error("Could not load quiz history");
+            }
+
+            const history = await response.json();
+
+            historyList.replaceChildren();
+
+            if (history.length === 0) {
+                const message = document.createElement("p");
+                message.className = "quiz-history-message";
+                message.textContent =
+                    "No quiz attempts yet. Complete an aptitude quiz to see your scores here.";
+                historyList.appendChild(message);
+                return;
+            }
+
+            history.forEach(function (attempt) {
+                const card = document.createElement("article");
+                card.className = "quiz-history-card";
+
+                const title = document.createElement("h3");
+                title.textContent = "Aptitude Quiz";
+
+                const percentage = document.createElement("p");
+                percentage.className = "quiz-percentage";
+                percentage.textContent = `${attempt.percentage}%`;
+
+                const score = document.createElement("p");
+                score.textContent =
+                    `Score: ${attempt.score} out of ${attempt.total}`;
+
+                const date = document.createElement("p");
+                date.textContent = `Date: ${attempt.date}`;
+
+                card.append(title, percentage, score, date);
+                historyList.appendChild(card);
+            });
+        } catch (error) {
+            historyList.replaceChildren();
+
+            const message = document.createElement("p");
+            message.className = "quiz-history-message";
+            message.textContent =
+                "Quiz history could not load. Please check that the Flask server is running.";
+
+            historyList.appendChild(message);
+            console.error("Quiz history error:", error);
+        }
+    }
+
+    loadQuizHistory();
+});
